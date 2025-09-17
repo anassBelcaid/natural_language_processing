@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.34">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Natural Language Processing</title>
+<title>Student Groups &amp; Projects Manager – Natural Language Processing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,15 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-aceb0a68f67efb8a2bc451b62cdd4b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3ce498c75e4d4d0e3d57c48f72e7b20e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,8 +79,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Natural Language Processing</span>
     </a>
@@ -101,7 +98,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link active" href="./student_projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -112,23 +113,36 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#student-groups-projects-management-system" id="toc-student-groups-projects-management-system" class="nav-link active" data-scroll-target="#student-groups-projects-management-system">Student Groups &amp; Projects Management System</a>
+  <ul class="collapse">
+  <li><a href="#dashboard" id="toc-dashboard" class="nav-link" data-scroll-target="#dashboard">📊 Dashboard</a></li>
+  <li><a href="#groups-schedule-priority" id="toc-groups-schedule-priority" class="nav-link" data-scroll-target="#groups-schedule-priority">👥 Groups Schedule &amp; Priority</a></li>
+  <li><a href="#project-assignment" id="toc-project-assignment" class="nav-link" data-scroll-target="#project-assignment">🎯 Project Assignment</a></li>
+  <li><a href="#projects-overview" id="toc-projects-overview" class="nav-link" data-scroll-target="#projects-overview">📋 Projects Overview</a></li>
+  <li><a href="#how-to-use-this-system" id="toc-how-to-use-this-system" class="nav-link" data-scroll-target="#how-to-use-this-system">📝 How to Use This System</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Student Groups &amp; Projects Manager</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -140,9 +154,183 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="student-groups-projects-management-system" class="level2">
+<h2 class="anchored" data-anchor-id="student-groups-projects-management-system">Student Groups &amp; Projects Management System</h2>
+<p>This interactive system manages group priorities and project assignments based on presentation order.</p>
+<section id="dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="dashboard">📊 Dashboard</h3>
+<div class="row">
+<section id="quick-actions" class="level4 col-md-4">
+<h4 class="anchored" data-anchor-id="quick-actions">Quick Actions</h4>
+<button class="btn btn-primary mb-2" onclick="updateDisplay()">
+🔄 Refresh Data
+</button>
+<p><br> <button class="btn btn-warning" onclick="resetAllAssignments()">🗑️ Reset All Assignments</button></p>
+</section>
+<section id="system-status" class="level4 col-md-8">
+<h4 class="anchored" data-anchor-id="system-status">System Status</h4>
+<pre id="systemStatus" class="bg-light p-3 rounded"></pre>
+</section>
+</div>
+</section>
+<section id="groups-schedule-priority" class="level3">
+<h3 class="anchored" data-anchor-id="groups-schedule-priority">👥 Groups Schedule &amp; Priority</h3>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+<thead class="table-primary">
+<tr>
+<th>
+Group
+</th>
+<th>
+Team Lead
+</th>
+<th>
+Week
+</th>
+<th>
+Course Chapter
+</th>
+<th>
+Priority
+</th>
+<th>
+Selection Status
+</th>
+</tr>
+</thead>
+<tbody id="groupsTableBody">
+</tbody>
+</table>
+</div>
+</section>
+<section id="project-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="project-assignment">🎯 Project Assignment</h3>
+<div class="row">
+<section id="quick-assignment" class="level4 col-md-6">
+<h4 class="anchored" data-anchor-id="quick-assignment">Quick Assignment</h4>
+<div class="mb-3">
+<p><label class="form-label">Select Available Project:</label> <select class="form-select" id="projectSelector"> <option value="">Select a project…</option> </select></p>
+</div>
+<div class="mb-3">
+<p><label class="form-label">Select Group:</label> <select class="form-select" id="groupSelector"> <option value="">Select a group…</option> </select></p>
+</div>
+<button class="btn btn-success" onclick="assignProjectFromSelectors()">
+📌 Assign Project
+</button>
+</section>
+<section id="assignment-rules" class="level4 col-md-6">
+<h4 class="anchored" data-anchor-id="assignment-rules">Assignment Rules</h4>
+<div class="alert alert-info">
+<p>• Groups can only select projects based on their priority rank<br> • Higher priority groups (lower numbers) must select first<br> • Each group can only have one project<br> • Priority is determined by presentation week (earlier = higher priority)</p>
+</div>
+</section>
+</div>
+<script>
+function assignProjectFromSelectors() {
+  const projectId = document.getElementById('projectSelector').value;
+  const groupId = document.getElementById('groupSelector').value;
+  
+  if (!projectId || !groupId) {
+    alert('Please select both a project and a group!');
+    return;
+  }
+  
+  assignProject(parseInt(projectId), parseInt(groupId));
+}
+
+// Update group selector
+function updateGroupSelector() {
+  const selector = document.getElementById('groupSelector');
+  selector.innerHTML = '<option value="">Select a group...</option>' + 
+    groups.map(g => `<option value="${g.id}">Group ${g.id} (Priority ${g.priority})</option>`).join('');
+}
+
+// Override updateDisplay to include group selector
+const originalUpdateDisplay = updateDisplay;
+updateDisplay = function() {
+  originalUpdateDisplay();
+  updateGroupSelector();
+}
+</script>
+</section>
+<section id="projects-overview" class="level3">
+<h3 class="anchored" data-anchor-id="projects-overview">📋 Projects Overview</h3>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+<thead class="table-success">
+<tr>
+<th>
+Project
+</th>
+<th>
+Project Title
+</th>
+<th>
+Assigned To
+</th>
+<th>
+Status
+</th>
+<th>
+Due Date
+</th>
+<th>
+Actions
+</th>
+</tr>
+</thead>
+<tbody id="projectsTableBody">
+</tbody>
+</table>
+</div>
+</section>
+<section id="how-to-use-this-system" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-this-system">📝 How to Use This System</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+For Students and Instructors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Check Group Priority</strong>: View the Groups table to see presentation order and priority rankings</li>
+<li><strong>Assign Projects</strong>: Use the dropdowns in the Projects table or the Quick Assignment section</li>
+<li><strong>Follow Priority Rules</strong>: Only groups with proper priority can select projects</li>
+<li><strong>Monitor Progress</strong>: Use the Dashboard to track assignment progress</li>
+<li><strong>Reset if Needed</strong>: Use the Reset button to clear all assignments and start over</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important Rules
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Groups presenting earlier get higher priority for project selection</li>
+<li>Each group can only be assigned one project</li>
+<li>Projects are assigned on a first-come, first-served basis within priority constraints</li>
+<li>The system automatically prevents invalid assignments</li>
+<li><strong>Data is saved locally in your browser</strong> - clearing browser data will reset assignments</li>
+</ul>
+</div>
+</div>
+<hr>
+<p><em>This system ensures fair project distribution based on presentation scheduling and maintains academic integrity through automated rule enforcement.</em></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -196,14 +384,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -218,7 +405,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/anassBelcaid\.github\.io\/natural_language_processing\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

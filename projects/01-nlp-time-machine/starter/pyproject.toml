@@ -1,0 +1,18 @@
+[project]
+name = "nlp-time-machine"
+version = "0.1.0"
+description = "Starter environment for CS 351 Project 01"
+requires-python = ">=3.11"
+dependencies = [
+  "scikit-learn>=1.5",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "--disable-warnings"

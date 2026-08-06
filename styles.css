@@ -332,6 +332,127 @@ img {
   text-decoration: none;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1120px;
+  margin: 2rem auto;
+}
+
+.project-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #dce5ea;
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(18, 48, 74, 0.09);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(18, 48, 74, 0.14);
+}
+
+.project-preview {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin: 0;
+}
+
+.project-card-body {
+  padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.project-card-body h3 {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.project-card-body h3 a {
+  color: var(--uae-navy);
+  text-decoration: none;
+}
+
+.project-number {
+  color: var(--uae-teal);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 0.3rem 0.58rem;
+  margin: 0.25rem 0.2rem 0 0;
+  color: #48606d;
+  background: #edf4f6;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.project-card-placeholder {
+  background: #f7f9fa;
+}
+
+.project-placeholder-visual {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 2;
+  color: #b2bec5;
+  background: linear-gradient(145deg, #edf2f4, #f9fbfc);
+  font-size: 3rem;
+  font-weight: 750;
+}
+
+.project-brief {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  background: #eef6f8;
+  border-left: 4px solid var(--uae-teal);
+  border-radius: 0.4rem;
+}
+
+.homework-hero {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 0.85rem;
+}
+
+.project-hint {
+  padding: 0.85rem 1rem;
+  margin: 1rem 0 1.4rem;
+  color: #435763;
+  background: #f7fafb;
+  border: 1px solid #d9e4e8;
+  border-radius: 0.55rem;
+}
+
+.project-hint summary {
+  color: var(--uae-blue);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.project-hint[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.project-hint p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Enhanced table responsiveness */
 @media (max-width: 768px) {
   .institution-bar {

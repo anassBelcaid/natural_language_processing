@@ -2,14 +2,19 @@ project:
   type: website
 
 website:
-  title: "Natural Language Processing"
+  title: "CS 351 · NLP"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: overview.qmd
+        text: NLP Course
+      - href: logistics.qmd
+        text: Logistics
+      - href: schedule.qmd
         text: Schedule
-      - about.qmd
+      - href: coding-projects.qmd
+        text: Coding Projects
+      - href: student-projects.qmd
+        text: Student Projects
 
 format:
   html:
@@ -18,5 +23,4 @@ format:
       - brand
     css: styles.css
     toc: true
-
 

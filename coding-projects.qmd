@@ -1,0 +1,21 @@
+---
+title: "Coding Projects"
+description: "Detailed, reproducible programming projects for applied NLP."
+---
+
+This page will organize the guided coding projects that accompany the lectures.
+
+## Project format
+
+Each coding project will include:
+
+1. Learning objectives and conceptual background
+2. Environment and dataset setup
+3. A detailed implementation walkthrough
+4. Experiments and interpretation
+5. Exercises and extension challenges
+6. Reproducibility and submission requirements
+
+:::{.callout-note}
+Projects will be added incrementally as we finalize the lecture sequence.
+:::

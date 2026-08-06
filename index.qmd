@@ -1,8 +1,4 @@
 ---
-title: "CS 351: Introduction to Natural Language Processing"
-subtitle: "Fifth Year Computer Science Course"
-author: "Dr. A.Belcaid"
-date: "09-01-2025"
 format: 
   html:
     theme: 
@@ -17,314 +13,86 @@ execute:
 
 :::{.header-section}
 
+:::{.institution-bar}
+![Université Abdelmalek Essaâdi](./images/uae-logo.png){.university-logo}
 
+:::{.institution-copy}
+**Université Abdelmalek Essaâdi**  
+Fifth-Year Computer Science
+:::
+:::
 
-This course provides a comprehensive introduction to Natural Language Processing (NLP), covering both theoretical foundations and practical applications. Students will learn to build systems that can understand, analyze, and generate human language using modern machine learning and deep learning techniques.
+:::{.course-hero}
 
-![Open AI Whisper](whisper.png){.nlp-demo}
+:::{.hero-copy}
+:::{.course-kicker}
+CS 351 · Academic Year 2026–2027
+:::
+
+# Introduction to Natural Language Processing
+
+:::{.hero-lead}
+From linguistic foundations to modern language models, with rigorous lectures, practical notebooks, and research-driven projects.
+:::
+
+:::{.course-meta}
+`14 weeks`{.meta-pill} `Lectures & notes`{.meta-pill} `Coding projects`{.meta-pill} `Project presentations`{.meta-pill}
+:::
+:::
+
+:::{.hero-visual}
+![A visual journey from multilingual language and speech through tokens, embeddings, attention networks, and NLP applications](./images/nlp-hero-2026.png){.nlp-demo}
+:::
+
+:::
 
 :::{.description-text}
-Through a combination of student-led presentations, hands-on coding sessions, and independent research projects, you'll master the techniques that power today's most advanced AI applications - from search engines and chatbots to translation systems and content generators.
+This course provides a comprehensive introduction to Natural Language Processing (NLP), covering theoretical foundations and practical applications. Through lectures, detailed coding sessions, and independent research projects, students will learn to build systems that analyze, understand, and generate human language.
 :::
 
 :::
 
-## 📚 Reference Books
+## Reference Books
 
 :::{.book-container}
 
 :::{.book-card}
-![Speech and Language Processing](./images/book1.jpg){.book-image}
+![Cover of Speech and Language Processing, third edition](./images/slp3-cover.jpg){.book-image}
 
 **Speech and Language Processing**  
 *Daniel Jurafsky & James H. Martin*
 
-The definitive textbook for NLP fundamentals covering statistical and neural approaches.
+Our core reference: a rigorous bridge from words and n-grams to transformers, LLM post-training, RAG, translation, and speech. Updated January 2026.
 
-[📖 Read Online](https://web.stanford.edu/~jurafsky/slp3/)
+[📖 Read the 3rd Edition](https://web.stanford.edu/~jurafsky/slp3/)
 :::
 
 :::{.book-card}
-![Natural Language Processing with Python](https://m.media-amazon.com/images/I/81Z8Ko9zszL._SY342_.jpg){.book-image}
+![Cover of Natural Language Processing with Transformers](./images/nlp-transformers-cover.webp){.book-image}
 
-**Natural Language Processing with Python**  
-*Steven Bird, Ewan Klein & Edward Loper*
+**Natural Language Processing with Transformers**  
+*Lewis Tunstall, Leandro von Werra & Thomas Wolf*
 
-Practical guide to implementing NLP solutions using Python and NLTK.
+A practical companion for building, fine-tuning, evaluating, and optimizing transformer applications with the Hugging Face ecosystem.
 
-[📖 Read Online](https://www.nltk.org/book/)
+[📖 View at O'Reilly](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/)
 :::
 
 :::
 
-## 🎓 Prerequisites
+## Taught by
 
-:::{.content-card}
+:::{.instructor-card}
 
-Students should have completed the following requirements before enrolling:
-
-:::{.prereq-grid}
-
-:::{.prereq-item}
-**💻 Programming Skills**
-
-- Python programming (intermediate level)
-- Experience with NumPy and Pandas
-- Basic command line usage
-- Git version control
+:::{.instructor-photo-placeholder aria-label="Instructor photograph placeholder"}
+&nbsp;
 :::
 
-:::{.prereq-item}
-**🧮 Mathematical Foundation**
+:::{.instructor-details}
+### Dr. A. Belcaid
 
-- Linear algebra (vectors, matrices)
-- Statistics and probability theory
-- Calculus (basic optimization)
-- Discrete mathematics
-:::
-
-:::{.prereq-item}
-**🤖 Machine Learning**
-
-- Supervised learning concepts
-- Neural network basics
-- Model evaluation and validation
-- Feature engineering principles
-:::
-
-:::{.prereq-item}
-**📚 Recommended Courses**
-
-- CS 229: Machine Learning
-- CS 106B: Programming Abstractions
-- MATH 51: Linear Algebra
-- STATS 116: Statistical Methods
+**Course Instructor**  
+Computer Science · Université Abdelmalek Essaâdi
 :::
 
 :::
-
-:::{.callout-note}
-## 📝 Preparation Suggestion
-Review Python programming and linear algebra concepts before the course begins. Complete the [prerequisite assessment](quiz.qmd) to identify any knowledge gaps.
-:::
-
-:::
-
-## 📅 Course Overview
-
-:::{.content-card}
-
-### 14-Week Structure
-
-The course is organized into two main phases over 14 weeks:
-
-:::{.timeline}
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 1: NLP Fundamentals
-**Topic Presentation + Hands-on Session**
-
-- Text preprocessing and tokenization
-- Regular expressions and string manipulation
-- Introduction to NLTK and spaCy libraries
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 2: Statistical Language Models
-**Topic Presentation + Hands-on Session**
-
-- N-gram models and probability estimation
-- Smoothing techniques for sparse data
-- Perplexity evaluation and model comparison
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 3: Word Representations
-**Topic Presentation + Hands-on Session**
-
-- Word embeddings and vector semantics
-- Word2Vec, GloVe, and FastText
-- Embedding evaluation and visualization
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 4: Neural Networks for NLP
-**Topic Presentation + Hands-on Session**
-
-- RNNs, LSTMs, and sequence modeling
-- Gradient flow and training challenges
-- PyTorch implementation workshop
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 5: Attention and Transformers
-**Topic Presentation + Hands-on Session**
-
-- Attention mechanisms and self-attention
-- Transformer architecture deep dive
-- Multi-head attention implementation
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 6: Large Language Models
-**Topic Presentation + Hands-on Session**
-
-- Pre-training objectives and fine-tuning
-- BERT, GPT, and modern architectures
-- Transfer learning strategies
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Week 7: Ethics and Evaluation
-**Topic Presentation + Hands-on Session**
-- Bias detection and fairness metrics
-- Responsible AI development
-- Model evaluation best practices
-:::
-:::
-
-:::{.timeline-item}
-:::{.timeline-marker}
-:::
-:::{.timeline-content}
-### Weeks 8-14: Project Phase
-**Independent Research Projects**
-- Project development and implementation
-- Weekly progress presentations
-- Peer review and feedback sessions
-- Final project demonstrations
-:::
-:::
-
-:::
-
-:::
-
-```{mermaid}
-%%| fig-cap: "Course Timeline and Milestones"
-%%| label: fig-timeline
-gantt
-    title Course Schedule
-    dateFormat  YYYY-MM-DD
-    
-    section Topic Presentations
-    Week 1-7 Presentations    :active, topics, 2024-09-01, 49d
-    
-    section Project Development
-    Project Proposals         :milestone, proposal, 2024-10-01, 0d
-    Development Phase         :projects, 2024-10-20, 35d
-    Final Presentations       :presentations, 2024-11-24, 14d
-    
-    section Key Deadlines
-    Midterm Check            :milestone, midterm, 2024-10-15, 0d
-    Progress Reviews         :milestone, progress, 2024-11-10, 0d
-    Final Demos             :milestone, final, 2024-12-08, 0d
-```
-
-## 📊 Grading
-
-:::{.content-card}
-
-<table class="grade-table">
-<thead>
-<tr>
-<th>Component</th>
-<th>Weight</th>
-<th>Description</th>
-<th>Timeline</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Topic Presentations</strong></td>
-<td>25%</td>
-<td>Research and present assigned weekly topics</td>
-<td>Weeks 1-7</td>
-</tr>
-<tr>
-<td><strong>Hands-on Assignments</strong></td>
-<td>20%</td>
-<td>Coding exercises and practical implementations</td>
-<td>Weekly</td>
-</tr>
-<tr>
-<td><strong>Final Project</strong></td>
-<td>35%</td>
-<td>Independent research project with presentation</td>
-<td>Weeks 8-14</td>
-</tr>
-<tr>
-<td><strong>Peer Evaluations</strong></td>
-<td>10%</td>
-<td>Constructive feedback on classmates' work</td>
-<td>Ongoing</td>
-</tr>
-<tr>
-<td><strong>Project Proposal</strong></td>
-<td>5%</td>
-<td>Detailed proposal for final project</td>
-<td>Week 4</td>
-</tr>
-<tr>
-<td><strong>Participation</strong></td>
-<td>5%</td>
-<td>Active engagement and discussion</td>
-<td>Throughout</td>
-</tr>
-</tbody>
-</table>
-
-### Grade Scale
-
-- **A (90-100%)**: Exceptional work demonstrating mastery
-- **B (80-89%)**: Good understanding with solid implementation
-- **C (70-79%)**: Adequate grasp of core concepts
-- **D (60-69%)**: Minimal understanding, needs improvement
-- **F (<60%)**: Insufficient demonstration of learning
-
-:::
-
-## 📧 Contact Information
-
-:::{.contact-section}
-
-### Need Help or Have Questions?
-
-**Instructor:** Dr. A.Belcaid  
-**Email:** [your.email@university.edu](mailto:a.belcaid@uae.ac.ma)  
-**Office Hours:** Tuesdays & Thursdays, 2:00-4:00 PM  
-**Office Location:** Engineering Building, Room 401
-
-[📧 Email Me](mailto:your.email@university.edu){.email-button}
-
-:::
-
-
-

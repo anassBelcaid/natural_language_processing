@@ -1,0 +1,27 @@
+---
+title: "Course Logistics"
+description: "Practical information, policies, assessment, and course support."
+---
+
+This page will collect the practical information students need throughout the semester.
+
+## Course information
+
+- **Course:** CS 351 — Introduction to Natural Language Processing
+- **Academic year:** 2026–2027
+- **Level:** Fifth-year Computer Science
+- **Instructor:** Dr. A. Belcaid
+- **Duration:** 14 weeks
+
+## What will live here
+
+- Meeting times and classroom
+- Prerequisites and required software
+- Assessment and grading
+- Submission policy
+- Academic integrity and collaboration policy
+- Office hours and communication channels
+
+:::{.callout-note}
+This page is an initial structure. We will migrate and revise the relevant material from the former course overview in a later, focused step.
+:::

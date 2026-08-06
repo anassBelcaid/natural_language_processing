@@ -187,7 +187,8 @@ $box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   text-align: center;
   box-shadow: $box-shadow;
   transition: all 0.3s ease;
-  max-width: 300px;  // Reduced from 400px
+  width: min(100%, 360px);
+  max-width: 360px;
   
   &:hover {
     transform: translateY(-5px);  // Changed from scale to translateY
@@ -196,9 +197,10 @@ $box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .book-image {
-  width: 150px;     // Changed from 2000px to 150px
-  height: 200px;    // Changed from 300px to 200px
-  object-fit: cover;
+  width: 190px;
+  height: 250px;
+  object-fit: contain;
+  background: #f6f8fa;
   border-radius: $border-radius;
   margin-bottom: 1rem;
   box-shadow: $box-shadow-sm;

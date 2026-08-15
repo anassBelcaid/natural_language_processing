@@ -7,6 +7,12 @@
 \usepackage{caption}
 \usepackage{fvextra}
 
+% Explicit fallbacks for multilingual examples in lecture notes. The main and
+% mono fonts intentionally remain typographically focused; these commands are
+% used only where the source contains Arabic or CJK text.
+\newfontfamily\arabicexample{Noto Naskh Arabic}[Script=Arabic]
+\newfontfamily\cjkexample{Noto Sans CJK SC}
+
 \definecolor{UaeNavy}{HTML}{12304A}
 \definecolor{UaeBlue}{HTML}{176B91}
 \definecolor{UaeTeal}{HTML}{1F8A8A}

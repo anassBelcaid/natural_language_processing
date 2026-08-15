@@ -28,3 +28,5 @@ format:
       - brand
     css: styles.css
     toc: true
+    include-after-body:
+      - notes/mermaid-fix.html

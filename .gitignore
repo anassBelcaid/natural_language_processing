@@ -1,2 +1,8 @@
 /.quarto/
 /_site/
+
+**/*.quarto_ipynb
+
+# Quarto PDF intermediates (final PDFs are published under _site/)
+notes/**/index.tex
+notes/**/index_files/

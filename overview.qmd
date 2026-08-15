@@ -347,7 +347,60 @@ timeline
 - Model comparison across different architectures
 - Efficient fine-tuning with parameter-efficient methods (LoRA, adapters)
 
-## Week 7: Evaluation and Ethics in NLP {#sec-week7}
+
+## Week 8: Large Language Models II — Alignment and Advanced Applications {#sec-week8}
+
+### Topic Overview
+
+This module extends the study of LLMs from pre-training and fine-tuning (Week 6) toward **practical alignment methods and advanced deployment techniques**:
+
+- **Instruction and Preference Tuning**  
+  - Supervised fine-tuning for following instructions  
+  - Reinforcement Learning from Human Feedback (RLHF)  
+  - Direct Preference Optimization (DPO) as a lightweight alternative  
+
+- **Parameter-Efficient Methods**  
+  - LoRA and adapters  
+  - Prompt-tuning and prefix-tuning  
+  - Efficient training at scale  
+
+- **Deployment and Applications**  
+  - Retrieval-Augmented Generation (RAG) for factual grounding  
+  - Agents and tool integration (planning, external APIs, memory)  
+  - Multi-modal LLMs (text + vision + speech)  
+
+:::{.callout-note}
+## Alignment & Deployment Techniques
+- **Instruction Tuning**: Supervised adaptation to human instructions  
+- **Reinforcement Learning from Human Feedback (RLHF)**: Aligning models with preference data  
+  - [Christiano et al., 2017](https://arxiv.org/abs/1706.03741)  
+  - [Ouyang et al., 2022](https://arxiv.org/abs/2203.02155)  
+- **Direct Preference Optimization (DPO)**: Lightweight preference alignment  
+  - [Rafailov et al., 2023](https://arxiv.org/abs/2305.18290)  
+- **Parameter-Efficient Fine-tuning**:  
+  - LoRA ([Hu et al., 2021](https://arxiv.org/abs/2106.09685)), adapters, prefix-tuning  
+- **Model Compression & Acceleration**: Distillation, pruning, quantization for efficient inference  
+- **Retrieval-Augmented Generation (RAG)**: Grounding LLMs with external knowledge  
+  - [Lewis et al., 2020](https://arxiv.org/abs/2005.11401)  
+:::
+
+### Learning Objectives
+
+- Understand **instruction tuning and preference-based alignment** strategies  
+- Compare **parameter-efficient fine-tuning approaches**  
+- Explore **model compression and acceleration** for real-world deployment  
+- Analyze **emerging applications** of LLMs in RAG, agents, and multi-modal systems  
+
+### Hands-on Session
+
+**Practical Applications**:
+- Fine-tuning with **LoRA** for a downstream classification task  
+- Implementing a **toy preference-based tuning pipeline (DPO)**  
+- Building a **retrieval-augmented QA system** with [Hugging Face](https://huggingface.co/)  
+- Experimenting with **multi-modal models** (e.g., [LLaVA](https://llava-vl.github.io/))  
+
+
+## Week 8: Evaluation and Ethics in NLP {#sec-week7}
 
 ### Topic Overview
 

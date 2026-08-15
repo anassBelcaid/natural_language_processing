@@ -31,34 +31,47 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
 <tr class="era-foundations era-start">
   <td>01</td>
   <td><span class="era-label">Foundations</span></td>
-  <td><strong>NLP Foundations and Text Processing</strong><br><span class="topic-detail">NLP pipeline, linguistic levels, Unicode, normalization, tokenization, and Python tooling</span></td>
-  <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
-  <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 01</a></td>
+  <td><strong>Introduction to NLP</strong><br><span class="topic-detail">Course orientation, NLP tasks, three eras, major breakthroughs, and the road ahead</span></td>
+  <td><span class="resource-pending">Lecture</span> <a class="project-link" href="notes/01-foundations/index.html">Notes</a> <a class="project-link" href="notes/01-foundations/index.pdf">PDF</a></td>
+  <td>
+    <ul class="course-link-list">
+      <li><span class="required-badge">Explore</span><a href="coding-projects.html">How coding projects work</a></li>
+      <li><span class="required-badge">Start</span><a href="projects/01-nlp-time-machine/index.html">The NLP Time Machine</a></li>
+    </ul>
+  </td>
+  <td><a class="project-link" href="projects/01-nlp-time-machine/index.html">Project 01 · start</a></td>
 </tr>
 <tr class="era-foundations">
   <td>02</td>
   <td><span class="era-label">Foundations</span></td>
-  <td><strong>Statistical Language Models</strong><br><span class="topic-detail">N-grams, smoothing, perplexity, and text generation</span></td>
-  <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
-  <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 02</a></td>
+  <td><strong>Tokenization and Embeddings</strong><br><span class="topic-detail">Characters, words, modern subword tokenization, practical libraries, and meaning as geometry</span></td>
+  <td><span class="resource-pending">Lecture</span> <a class="project-link" href="notes/02-text-processing/index.html">Notes</a> <a class="project-link" href="notes/02-text-processing/index.pdf">PDF</a></td>
+  <td>
+    <ul class="course-link-list">
+      <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/class/cs224n/readings/cs224n_winter2023_lecture1_notes_draft.pdf">CS224N · Introduction and Word2Vec</a></li>
+      <li><span class="required-badge">Paper</span><a href="https://aclanthology.org/P16-1162/">BPE for rare words</a></li>
+      <li><span class="required-badge">Explore</span><a href="https://spacy.io/usage/linguistic-features/#tokenization">spaCy tokenization</a></li>
+      <li><span class="required-badge">Explore</span><a href="https://huggingface.co/docs/transformers/main/fast_tokenizers">Hugging Face tokenizers</a></li>
+      <li><span class="required-badge">Explore</span><a href="https://radimrehurek.com/gensim/models/keyedvectors.html">Gensim word vectors</a></li>
+    </ul>
+  </td>
+  <td><a class="project-link" href="projects/01-nlp-time-machine/index.html">Project 01 · finish</a></td>
 </tr>
 <tr class="era-foundations">
   <td>03</td>
   <td><span class="era-label">Foundations</span></td>
-  <td><strong>Text Classification</strong><br><span class="topic-detail">Vectorization, Naive Bayes, logistic regression, evaluation, and error analysis</span></td>
+  <td><strong>Learning Word Embeddings</strong><br><span class="topic-detail">Distributional semantics, co-occurrence, Word2Vec, GloVe, FastText, and contextual representations</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 03</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 02 · start</a></td>
 </tr>
 <tr class="era-foundations">
   <td>04</td>
   <td><span class="era-label">Representations</span></td>
-  <td><strong>Word Representations and Embeddings</strong><br><span class="topic-detail">Distributional semantics, Word2Vec, GloVe, FastText, and similarity</span></td>
+  <td><strong>Statistical NLP</strong><br><span class="topic-detail">N-grams, language modeling, vectorization, linear classification, evaluation, and error analysis</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 04</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 02 · finish</a></td>
 </tr>
 <tr class="era-sequences era-start">
   <td>05</td>
@@ -66,7 +79,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Neural Networks for Sequences</strong><br><span class="topic-detail">Neural language models, RNNs, LSTMs, GRUs, and sequence learning</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 05</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 03 · start</a></td>
 </tr>
 <tr class="era-sequences">
   <td>06</td>
@@ -74,7 +87,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Attention Mechanisms</strong><br><span class="topic-detail">Encoder-decoder models, queries, keys, values, and multi-head attention</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 06</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 03 · finish</a></td>
 </tr>
 <tr class="era-transformers era-start">
   <td>07</td>
@@ -82,7 +95,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Transformer Architecture</strong><br><span class="topic-detail">Transformer blocks, positions, residual connections, normalization, and training</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 07</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 04 · start</a></td>
 </tr>
 <tr class="era-transformers">
   <td>08</td>
@@ -90,7 +103,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Pretrained Language Models</strong><br><span class="topic-detail">Causal and masked language modeling, BERT, GPT, transfer learning, and fine-tuning</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 08</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 04 · finish</a></td>
 </tr>
 <tr class="era-modern era-start">
   <td>09</td>
@@ -98,7 +111,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Instruction Tuning and Efficient Adaptation</strong><br><span class="topic-detail">Instruction tuning, preference optimization, LoRA, adapters, and quantization</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 09</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 05 · start</a></td>
 </tr>
 <tr class="era-modern">
   <td>10</td>
@@ -106,7 +119,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td><strong>Retrieval-Augmented NLP Applications</strong><br><span class="topic-detail">Retrieval, embeddings for search, RAG pipelines, evaluation, and deployment</span></td>
   <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
-  <td><a class="project-link" href="coding-projects.qmd">Project 10</a></td>
+  <td><a class="project-link" href="coding-projects.html">Project 05 · finish</a></td>
 </tr>
 <tr class="era-projects era-start">
   <td>11</td>

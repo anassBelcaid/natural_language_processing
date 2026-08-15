@@ -1,18 +1,26 @@
 [project]
 name = "nlp-time-machine"
-version = "0.1.0"
-description = "Starter environment for CS 351 Project 01"
-requires-python = ">=3.11"
+version = "0.2.0"
+description = "A two-week guided notebook comparing three eras of NLP"
+requires-python = ">=3.11,<3.14"
 dependencies = [
+  "datasets>=4.0",
+  "ipykernel>=6.29",
+  "jupyterlab>=4.4",
+  "matplotlib>=3.10",
+  "pandas>=2.2",
   "scikit-learn>=1.5",
+  "torch>=2.6",
+  "transformers>=4.55",
 ]
 
-[dependency-groups]
-dev = [
-  "pytest>=8.0",
-]
+[tool.uv]
+package = false
 
-[tool.pytest.ini_options]
-testpaths = ["."]
-python_files = ["test_*.py"]
-addopts = "--disable-warnings"
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }

@@ -3,7 +3,7 @@ title: "Course Logistics"
 description: "Practical information, policies, assessment, and course support."
 ---
 
-This page will collect the practical information students need throughout the semester.
+This page collects the practical information students need throughout the semester. Begin here, then use the [course schedule](schedule.qmd) as your weekly entry point.
 
 ## Course information
 
@@ -13,15 +13,46 @@ This page will collect the practical information students need throughout the se
 - **Instructor:** Dr. A. Belcaid
 - **Duration:** 14 weeks
 
-## What will live here
+## How the course works
+
+Each teaching week follows a consistent rhythm:
+
+1. **Lecture:** encounter the motivating problem and the central idea.
+2. **Notes:** study the durable explanation, examples, and references.
+3. **Coding project:** turn the idea into a working, testable system.
+4. **Error analysis:** explain what failed and what you would change.
+
+The final weeks are organized around student projects and presentations.
+
+## Assessment
+
+The course is deliberately project-centered. The provisional assessment balance is:
+
+| Component | Weight | What it rewards |
+|---|---:|---|
+| Coding-project portfolio | **45%** | Consistent implementation, testing, reproducibility, and error analysis |
+| Final project | **40%** | Problem formulation, technical choices, evaluation, communication, and presentation |
+| Partial examination | **15%** | Understanding and connecting the course's central ideas |
+
+:::{.callout-note}
+The assessment balance will be confirmed before graded work begins. Detailed rubrics, milestones, submission rules, and collaboration policies will be published here.
+:::
+
+## Course tools
+
+- The **Schedule** tells you what to do each week.
+- **Lecture notes** are available as web pages and, where provided, PDFs.
+- **Coding Projects** contain the brief, starter bundle, tests, and submission checklist.
+- **Student Projects** will contain themes, milestones, presentation times, and the final rubric.
+
+## Details to be announced
 
 - Meeting times and classroom
-- Prerequisites and required software
-- Assessment and grading
-- Submission policy
+- Required software and setup check
+- Submission platform and late-work policy
 - Academic integrity and collaboration policy
 - Office hours and communication channels
 
 :::{.callout-note}
-This page is an initial structure. We will migrate and revise the relevant material from the former course overview in a later, focused step.
+Check this page again before the first graded submission; operational details will be added as they are confirmed.
 :::

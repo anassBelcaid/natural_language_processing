@@ -1,248 +1,111 @@
 ---
 title: "Project 01 · The NLP Time Machine"
-subtitle: "One task, three eras of natural language processing"
-description: "Compare rule-based, statistical, and pretrained approaches to sentiment classification."
+subtitle: "One task, three eras, two weeks"
+description: "Implement meaningful pieces of rule-based, statistical, and pretrained sentiment systems in one guided notebook."
 toc: true
 toc-depth: 2
 page-layout: article
 ---
 
 :::{.project-brief}
-**Estimated time:** 90 minutes  
+**Duration:** Two weeks  
 **Mode:** Individual  
-**Deliverable:** Completed starter code, passing tests, and a short error analysis
+**Format:** One guided Jupyter notebook  
+**Deliverable:** Completed notebook with outputs and a 250–400 word reflection
 :::
 
 ![Rules, statistical learning, and neural representations applied to the same sentiment task](images/preview.png){.homework-hero}
 
-## Your journey through NLP history
+## The idea
 
-Imagine that you are asked to determine whether a short product review is positive or negative—but you must solve the problem at three different moments in the history of NLP.
+You will travel through three eras of NLP while solving the same sentiment-classification task:
 
-In the first era, there are no learned models. Every useful linguistic pattern must be written by hand. In the second, labeled examples allow an algorithm to learn which words matter. In the third, a pretrained Transformer arrives with representations learned from enormous text collections.
+1. **Rules:** write explicit linguistic decisions.
+2. **Statistical learning:** learn feature weights from labeled examples.
+3. **Pretrained Transformers:** reuse representations learned from much larger text collections.
 
-You will send the same reviews through all three systems and investigate what each breakthrough changed.
+The notebook supplies data loading, evaluation, and visualization. You implement a small but meaningful part of **every** system, receive immediate checks, and finish with a direct comparison on the same 500 SST-2 reviews.
 
-Most of the engineering has already been completed. Your task is to implement the small pieces that reveal the central ideas, then reason carefully about the results.
+```{mermaid}
+%%| fig-cap: "Every era contains student implementation, evaluation, and error analysis."
+flowchart LR
+    A[Rules<br/>3 TODOs] --> B[Statistical model<br/>3 TODOs]
+    B --> C[Transformer inference<br/>3 TODOs]
+    C --> D[Shared evaluation]
+    D --> E[Evidence-based reflection]
+```
 
-## Before you begin
+## Open or download the notebook
 
-Download and extract the complete starter bundle:
+[Open the notebook on the course site](starter/nlp_time_machine.ipynb){.btn .btn-primary}
 
-[Download the Project 01 starter ZIP](starter/nlp-time-machine-starter.zip){.btn .btn-primary download="nlp-time-machine-starter.zip"}
+[Download the complete starter ZIP](starter/nlp-time-machine-starter.zip){.btn .btn-secondary download="nlp-time-machine-starter.zip"}
 
-The archive creates one folder containing:
+The web version is rendered directly by Quarto. To complete and execute the work, download the starter and open the notebook locally.
 
-| File | Purpose | Should you edit it? |
+## What you will implement
+
+### Era I · Hand-written rules
+
+- `tokenize()` — normalize and extract word tokens while preserving contractions
+- `lexicon_score()` — combine positive and negative evidence with simple negation
+- `rule_based_predict()` — compose the rule pipeline into a label decision
+
+### Era II · Statistical learning
+
+- `fit_statistical_classifier()` — fit unigram/bigram TF–IDF and logistic regression
+- `statistical_predict()` — transform new text without leaking test information
+- `strongest_features()` — expose the most positive and negative learned weights
+
+### Era III · Pretrained Transformer
+
+- `load_transformer()` — load the matching DistilBERT tokenizer and classifier
+- `encode_batch()` — create padded, truncated PyTorch inputs
+- `transformer_predict()` — compute logits, select classes, and decode labels
+
+## What appears at the end
+
+After all nine TODOs pass, the notebook automatically produces:
+
+- an accuracy table for all three eras;
+- a bar chart showing the historical progression;
+- the statistical model's strongest learned features;
+- examples where a later method corrects an earlier method;
+- three confusion matrices; and
+- cases where even the pretrained Transformer fails.
+
+The fixed dataset sample and random seed make the comparison reproducible. The expected pattern is that rules have limited coverage, statistical learning improves substantially, and the fine-tuned Transformer achieves the strongest contextual performance. The notebook still asks students to inspect exceptions rather than treating that ranking as universal.
+
+## Two-week rhythm
+
+| Week | Work | Milestone |
 |---|---|---|
-| `README.md` | Setup, workflow, and submission checklist | Read first |
-| `nlp_time_machine.py` | Supplied pipeline and the three student implementation points | **Yes** |
-| `test_nlp_time_machine.py` | Public tests providing immediate feedback | No |
-| `pyproject.toml` | Python requirements and pytest configuration | No |
-| `uv.lock` | Exact tested dependency versions | No |
+| **Week 1** | Dataset, rules, TF–IDF, logistic regression, learned features | TODOs 1–6 pass |
+| **Week 2** | Transformer tokenizer and inference, shared evaluation, disagreements | TODOs 7–9 pass and reflection complete |
 
-Keep these files together. The commands below expect to be run from the extracted folder.
+## Setup
 
-Run the project once before changing anything:
+After extracting the starter ZIP:
 
 ```bash
 uv sync
-uv run pytest -q
+uv run jupyter lab nlp_time_machine.ipynb
 ```
 
-Several tests should fail because the three student functions are not implemented yet. One test should already pass, confirming that the supplied statistical pipeline is ready.
+The first execution downloads the Stanford SST-2 dataset and the pretrained DistilBERT sentiment model. Later executions reuse their local caches.
 
-## Era I · Language as hand-written rules
-
-Our first classifier cannot learn from examples. It needs an explicit procedure:
-
-1. Break a review into tokens
-2. Look up each token in positive and negative word lists
-3. Adjust the score when a negation reverses a sentiment word
-4. Convert the final score into a label
-
-This approach is limited, but every decision is visible. That makes it a useful starting point—and an excellent instrument for understanding what later methods automate.
-
-### Build the tokenizer
-
-Raw text contains capitalization and punctuation that should not affect a simple lexicon lookup. The function `tokenize()` converts a string into a normalized sequence of word tokens.
-
-**Function contract**
-
-```python
-def tokenize(text: str) -> list[str]:
-```
-
-- **Input:** one review as a Python string
-- **Output:** a list of lowercase tokens
-- **Keep:** alphabetic words and internal apostrophes in contractions
-- **Remove:** punctuation, digits, and empty strings
-- **Do not:** modify the input string
-
-For example:
-
-```python
-tokenize("It's NOT reliable!")
-# ["it's", "not", "reliable"]
-```
-
-:::{.callout-note collapse="true"}
-## Recall · Tokenization and normalization
-
-Normalization reduces superficial variation before later processing. Lowercasing makes `Good` and `good` comparable. Tokenization decides which character sequences count as units. Here, `don't` should remain one token, while punctuation should disappear.
+:::{.callout-note}
+The course site renders the notebook without executing it. Students execute it locally because the starter intentionally contains incomplete functions.
 :::
-
-<details class="project-hint">
-<summary>Show a hint</summary>
-
-Python's `re.findall()` can return every non-overlapping substring that matches a pattern. Start with a pattern for one or more letters, then add an optional apostrophe followed by more letters. Apply it to `text.lower()`.
-
-</details>
-
-After implementing the function, run only its tests:
-
-```bash
-uv run pytest -q -k tokenize
-```
-
-### Give words a sentiment score
-
-The starter provides `POSITIVE_WORDS`, `NEGATIVE_WORDS`, and `NEGATIONS`. Your `lexicon_score()` function walks through a token sequence and returns a single integer.
-
-**Function contract**
-
-```python
-def lexicon_score(tokens: Sequence[str]) -> int:
-```
-
-- **Input:** an ordered sequence of normalized tokens
-- **Output:** an integer sentiment score
-- A positive word contributes `+1`
-- A negative word contributes `-1`
-- A neutral word contributes `0`
-- If the immediately preceding token is `no`, `not`, or `never`, reverse the contribution
-
-Examples:
-
-```python
-lexicon_score(["clear", "and", "helpful"])  #  2
-lexicon_score(["slow", "and", "confusing"]) # -2
-lexicon_score(["not", "good"])               # -1
-lexicon_score(["never", "bad"])              #  1
-```
-
-:::{.callout-note collapse="true"}
-## Recall · Why word order matters
-
-A bag of isolated sentiment words would treat `good` and `not good` identically. Even this tiny negation rule shows why language cannot always be represented as unordered counts. The rule is still crude: `not especially good` will expose one of its limitations.
-:::
-
-<details class="project-hint">
-<summary>Show a hint</summary>
-
-Iterate with both the position and token. First determine whether the current token contributes `1`, `-1`, or `0`. When the position is greater than zero, inspect `tokens[position - 1]`. Multiply a nonzero contribution by `-1` when that previous token is a negation.
-
-</details>
-
-Check this stage with:
-
-```bash
-uv run pytest -q -k lexicon
-```
-
-### Turn the score into a decision
-
-The numeric score now needs to become the classifier's final prediction. Complete `rule_based_predict()` by composing the two functions you have already written.
-
-**Function contract**
-
-```python
-def rule_based_predict(text: str) -> str:
-```
-
-- **Input:** one raw review string
-- **Output:** exactly `"positive"`, `"negative"`, or `"neutral"`
-- Positive scores map to `"positive"`
-- Negative scores map to `"negative"`
-- A zero score maps to `"neutral"`
-
-<details class="project-hint">
-<summary>Show a hint</summary>
-
-This function should not repeat the tokenizer or scoring logic. Call `tokenize(text)`, pass its output to `lexicon_score()`, and use a short `if`/`elif`/`else` decision.
-
-</details>
-
-Run the entire rule-based autograder:
-
-```bash
-uv run pytest -q
-```
-
-When all three functions are correct, the suite should report `8 passed`.
-
-## Era II · Learning patterns from examples
-
-The rule-based system depends on vocabulary and logic chosen by its author. Statistical NLP changes the workflow: we provide labeled reviews, and an optimization algorithm learns which features predict each label.
-
-The starter already supplies:
-
-- `TfidfVectorizer` to transform reviews into weighted unigram and bigram features
-- `LogisticRegression` to learn a decision boundary
-- A scikit-learn `Pipeline` that keeps preprocessing and prediction together
-
-You do not need to implement the model in this first project. Read `build_statistical_classifier()` and identify where text becomes numbers and where the label decision is learned.
-
-:::{.callout-tip}
-## Think before running
-
-Predict one kind of review that the statistical model could classify correctly even when none of its words appear in the hand-written lexicon. What must be present in the training data for that to happen?
-:::
-
-## Era III · Reusing a pretrained model
-
-The final system uses a Transformer that was pretrained before your project began. The supplied `transformer_predict()` wrapper loads a sentiment-analysis pipeline and applies it directly to a list of reviews.
-
-Transformer inference is optional in the public autograder because it requires a model download. To try it locally:
-
-```bash
-uv add transformers torch
-```
-
-You are not expected to understand the Transformer internals yet. Treat the model as a historical preview: later lectures will open this black box and reconstruct its essential components.
-
-## Compare the three eras
-
-A higher score is useful, but it does not explain a model. Find at least five reviews for which the systems disagree and classify the likely cause.
-
-Suggested categories include:
-
-- Negation outside the one-word rule
-- Unseen vocabulary
-- Mixed sentiment
-- Intensity
-- Sarcasm or irony
-- Domain-specific meaning
-
-Create a comparison table:
-
-| Review | Rules | Statistical | Transformer | Gold | Likely cause |
-|---|---|---|---|---|---|
-| Example review | … | … | … | … | … |
 
 ## Submission
 
-Submit:
+Submit `nlp_time_machine.ipynb` with:
 
-- `nlp_time_machine.py` with the three functions completed
-- The output of `uv run pytest -q`
-- A comparison table containing five disagreements
-- A 150–250 word conclusion
+- every TODO completed;
+- every assertion check passing;
+- all final tables and plots visible;
+- at least three model disagreements discussed; and
+- a 250–400 word response explaining what knowledge each era required and what errors remained.
 
-Your conclusion should answer:
-
-> What work did each historical breakthrough remove from the previous workflow, and what problems remained unsolved?
-
-:::{.callout-important}
-Passing the tests verifies required behavior, but it does not replace the comparison and explanation. The goal is not merely to make the code run; it is to understand why the three systems behave differently.
-:::
+Before submitting, restart the kernel and run the entire notebook from top to bottom.

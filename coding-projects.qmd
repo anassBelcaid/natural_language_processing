@@ -14,12 +14,12 @@ The coding projects turn each major course idea into a working system. Starter c
 
 :::{.project-card-body}
 :::{.project-number}
-PROJECT 01 · 90 MINUTES
+PROJECT 01 · TWO WEEKS
 :::
 
 ### [The NLP Time Machine](projects/01-nlp-time-machine/index.qmd)
 
-Solve one sentiment-classification task with rules, statistical learning, and a pretrained Transformer—then explain what each breakthrough changed.
+Implement meaningful pieces of rules, statistical learning, and pretrained Transformer inference in one guided notebook—then explain what each breakthrough changed.
 
 `Text processing`{.project-tag} `Classification`{.project-tag} `Error analysis`{.project-tag}
 :::
@@ -37,7 +37,7 @@ PROJECT 02
 
 ### Coming next
 
-The second coding project will be introduced with the statistical language-model module.
+The second two-week coding project will connect learned embeddings and statistical NLP across Weeks 3–4.
 :::
 :::
 

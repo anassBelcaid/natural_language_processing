@@ -32,7 +32,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td>01</td>
   <td><span class="era-label">Foundations</span></td>
   <td><strong>Introduction to NLP</strong><br><span class="topic-detail">Course orientation, NLP tasks, three eras, major breakthroughs, and the road ahead</span></td>
-  <td><span class="resource-pending">Lecture</span> <a class="project-link" href="notes/01-foundations/index.html">Notes</a> <a class="project-link" href="notes/01-foundations/index.pdf">PDF</a></td>
+  <td><a class="project-link" href="lectures/01-introduction/index.html">Lecture</a> <a class="project-link" href="notes/01-foundations/index.html">Notes</a> <a class="project-link" href="notes/01-foundations/index.pdf">PDF</a></td>
   <td>
     <ul class="course-link-list">
       <li><span class="required-badge">Explore</span><a href="coding-projects.html">How coding projects work</a></li>
@@ -45,7 +45,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td>02</td>
   <td><span class="era-label">Foundations</span></td>
   <td><strong>Tokenization and Embeddings</strong><br><span class="topic-detail">Characters, words, modern subword tokenization, practical libraries, and meaning as geometry</span></td>
-  <td><span class="resource-pending">Lecture</span> <a class="project-link" href="notes/02-text-processing/index.html">Notes</a> <a class="project-link" href="notes/02-text-processing/index.pdf">PDF</a></td>
+  <td><a class="project-link" href="lectures/02-tokenization-embeddings/index.html">Lecture</a> <a class="project-link" href="notes/02-text-processing/index.html">Notes</a> <a class="project-link" href="notes/02-text-processing/index.pdf">PDF</a></td>
   <td>
     <ul class="course-link-list">
       <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/class/cs224n/readings/cs224n_winter2023_lecture1_notes_draft.pdf">CS224N · Introduction and Word2Vec</a></li>

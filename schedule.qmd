@@ -60,9 +60,15 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
 <tr class="era-foundations">
   <td>03</td>
   <td><span class="era-label">Foundations</span></td>
-  <td><strong>Learning Word Embeddings</strong><br><span class="topic-detail">Distributional semantics, co-occurrence, Word2Vec, GloVe, FastText, and contextual representations</span></td>
-  <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
-  <td><span class="link-pending">Coming soon</span></td>
+  <td><strong>Learning Word Embeddings</strong><br><span class="topic-detail">Distributional semantics, co-occurrence, Word2Vec, GloVe, and pretrained static vectors</span></td>
+  <td><a class="project-link" href="lectures/03-learning-embeddings/index.html">Lecture</a> <a class="project-link" href="notes/03-learning-embeddings/index.html">Notes</a> <a class="project-link" href="notes/03-learning-embeddings/index.pdf">PDF</a></td>
+  <td>
+    <ul class="course-link-list">
+      <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/class/cs224n/readings/cs224n_winter2023_lecture1_notes_draft.pdf">CS224N · Word2Vec</a></li>
+      <li><span class="required-badge">Paper</span><a href="https://aclanthology.org/D14-1162/">GloVe</a></li>
+      <li><span class="required-badge">Explore</span><a href="https://fasttext.cc/docs/en/crawl-vectors.html">fastText vectors</a></li>
+    </ul>
+  </td>
   <td><a class="project-link" href="coding-projects.html">Project 02 · start</a></td>
 </tr>
 <tr class="era-foundations">

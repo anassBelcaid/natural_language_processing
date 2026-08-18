@@ -409,21 +409,21 @@ Similar rows → similar contextual behavior → potentially similar meaning.
 
 :::: {.three-col .problem-cards}
 ::: {.card}
-### Huge
+**Huge**
 
 100,000 words
 
 → $10^{10}$ cells
 :::
 ::: {.card}
-### Sparse
+**Sparse**
 
 Most word pairs
 
 never occur
 :::
 ::: {.card}
-### Dominated
+**Dominated**
 
 `the`, `of`, `and`
 
@@ -1051,17 +1051,17 @@ Static embeddings blend word senses into one context-independent point.
 
 :::: {.three-col .problem-cards}
 ::: {.card}
-### Missing
+**Missing**
 
 new names and events
 :::
 ::: {.card}
-### Uneven
+**Uneven**
 
 languages and dialects
 :::
 ::: {.card}
-### Biased
+**Biased**
 
 historical associations
 :::

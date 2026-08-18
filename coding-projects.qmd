@@ -25,19 +25,19 @@ Implement meaningful pieces of rules, statistical learning, and pretrained Trans
 :::
 :::
 
-:::{.project-card.project-card-placeholder}
-:::{.project-placeholder-visual}
-02
-:::
+:::{.project-card}
+[![Word tokens becoming a structured semantic embedding space](projects/02-embedding-laboratory/images/preview.png){.project-preview}](projects/02-embedding-laboratory/index.qmd)
 
 :::{.project-card-body}
 :::{.project-number}
-PROJECT 02
+PROJECT 02 · TWO WEEKS
 :::
 
-### Coming next
+### [The Embedding Laboratory](projects/02-embedding-laboratory/index.qmd)
 
-The second two-week coding project will connect learned embeddings and statistical NLP across Weeks 3–4.
+Explore pretrained vectors, train Word2Vec with PyTorch, and complete a highly guided GloVe implementation.
+
+`Embeddings`{.project-tag} `PyTorch`{.project-tag} `Visualization`{.project-tag}
 :::
 :::
 

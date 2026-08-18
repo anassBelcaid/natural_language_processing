@@ -73,17 +73,17 @@ Meaning depends on context, speaker, community, and task.
 
 :::: {.three-col}
 ::: {.card .chars}
-### Understand
+<div class="card-title">Understand</div>
 
 classify · extract · infer
 :::
 ::: {.card .words}
-### Transform
+<div class="card-title">Transform</div>
 
 translate · summarize · retrieve
 :::
 ::: {.card .subwords}
-### Generate
+<div class="card-title">Generate</div>
 
 answer · assist · converse
 :::
@@ -241,17 +241,17 @@ One sentiment task. Three generations of NLP.
 
 :::: {.three-col}
 ::: {.card .chars}
-### Rules
+<div class="card-title">Rules</div>
 
 You write the knowledge
 :::
 ::: {.card .words}
-### Statistical model
+<div class="card-title">Statistical model</div>
 
 Data estimates the weights
 :::
 ::: {.card .subwords}
-### Transformer
+<div class="card-title">Transformer</div>
 
 Reuse pretrained knowledge
 :::
@@ -513,17 +513,17 @@ The best method is the simplest one whose assumptions fit the problem and whose 
 
 :::: {.three-col}
 ::: {.card .chars}
-### Rules
+<div class="card-title">Rules</div>
 
 In the expert's specification
 :::
 ::: {.card .words}
-### Statistical
+<div class="card-title">Statistical</div>
 
 In labeled examples and engineered features
 :::
 ::: {.card .subwords}
-### Neural / Transformer
+<div class="card-title">Neural / Transformer</div>
 
 In learned representations, pretraining, and adaptation
 :::

@@ -1,0 +1,26 @@
+[project]
+name = "embedding-laboratory"
+version = "0.1.0"
+description = "A guided project exploring and training static word embeddings"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "gensim>=4.3",
+  "ipykernel>=6.29",
+  "jupyterlab>=4.4",
+  "matplotlib>=3.10",
+  "pandas>=2.2",
+  "scikit-learn>=1.5",
+  "smart-open<8",
+  "torch>=2.6",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }

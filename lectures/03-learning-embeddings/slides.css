@@ -39,7 +39,7 @@
 .profile-compare span { display:block; width:50%; min-width:150px; background:linear-gradient(90deg,var(--teal),#79bbb5); color:white; border-radius:0 9px 9px 0; padding:.25em .4em; margin:.3em 0; font-size:.6em; }
 .profile-compare>div:first-child span:first-of-type { width:100%; }
 .problem-cards .card { min-height:250px; text-align:center; background:white; border-top:8px solid var(--coral); }
-.problem-cards .card h3 { color:var(--coral); font-size:1.2em; }
+.problem-cards .card strong { display:block; color:var(--coral); font-size:1.2em; margin-bottom:.45em; }
 .pmi-equation { margin:1em 0; font-size:1.2em; }
 .classical-route div { border-color:var(--gold); }
 

@@ -140,7 +140,7 @@ All distinct units the model knows
 
 :::: {.three-col}
 ::: {.card .chars}
-### Characters
+<div class="card-title">Characters</div>
 
 `t · o · k · e · n`
 
@@ -148,7 +148,7 @@ Small vocabulary
 Long sequences
 :::
 ::: {.card .words}
-### Words
+<div class="card-title">Words</div>
 
 `tokenization`
 
@@ -156,7 +156,7 @@ Short sequences
 Huge vocabulary
 :::
 ::: {.card .subwords}
-### Subwords
+<div class="card-title">Subwords</div>
 
 `token · ization`
 

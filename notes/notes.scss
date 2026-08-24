@@ -21,6 +21,8 @@ $line-height-base: 1.72;
 
 .quarto-title-block .title {
   letter-spacing: -0.025em;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 0.98;
 }
 
 .quarto-title-block .subtitle {
@@ -57,13 +59,32 @@ main.content > section > h1 {
   margin-top: 2.8rem;
   padding-bottom: 0.45rem;
   border-bottom: 1px solid #d9e3e1;
+  font-size: 2.05rem;
+  line-height: 1.12;
   letter-spacing: -0.02em;
 }
 
 main.content h2 {
   margin-top: 2.15rem;
   color: #0f6f78;
+  font-size: 1.48rem;
+  line-height: 1.2;
   letter-spacing: -0.012em;
+}
+
+.chapter-overview-image {
+  display: block;
+  width: 82%;
+  margin-inline: auto;
+}
+
+.cell-output-display svg,
+.cell-output-display img {
+  display: block;
+  width: auto !important;
+  max-width: min(100%, 760px) !important;
+  max-height: 34rem;
+  margin-inline: auto;
 }
 
 a {

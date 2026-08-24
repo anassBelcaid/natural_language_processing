@@ -74,9 +74,17 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
 <tr class="era-foundations">
   <td>04</td>
   <td><span class="era-label">Representations</span></td>
-  <td><strong>Statistical NLP</strong><br><span class="topic-detail">N-grams, language modeling, vectorization, linear classification, evaluation, and error analysis</span></td>
-  <td><a class="project-link" href="lectures/04-statistical-learning/index.html">Lecture</a> <span class="resource-pending">Notes</span></td>
-  <td><span class="link-pending">Coming soon</span></td>
+  <td><strong>Statistical NLP</strong><br><span class="topic-detail">N-gram language models, prediction, generation, smoothing, perplexity, and limitations</span></td>
+  <td><a class="project-link" href="lectures/04-statistical-learning/index.html">Lecture</a> <a class="project-link" href="notes/04-statistical-learning/index.html">Notes</a> <a class="project-link" href="notes/04-statistical-learning/index.pdf">PDF</a></td>
+  <td>
+    <ul class="course-link-list">
+      <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/~jurafsky/slpdraft/3.pdf">Jurafsky &amp; Martin · N-gram LMs</a></li>
+      <li><span class="required-badge">Paper</span><a href="https://doi.org/10.1006/csla.1999.0128">Chen &amp; Goodman · Smoothing</a></li>
+      <li><span class="required-badge">Paper</span><a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">Shannon · Information theory</a></li>
+      <li><span class="required-badge">Practice</span><a href="https://www.nltk.org/howto/lm.html">NLTK · Language-model tutorial</a></li>
+      <li><span class="required-badge">Practice</span><a href="https://www.nltk.org/api/nltk.lm.html">NLTK · LM API</a></li>
+    </ul>
+  </td>
   <td><a class="project-link" href="projects/02-embedding-laboratory/index.html">Project 02 · finish</a></td>
 </tr>
 <tr class="era-sequences era-start">

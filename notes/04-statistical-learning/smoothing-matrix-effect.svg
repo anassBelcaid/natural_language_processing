@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Effect of smoothing on a bigram probability matrix</title>
+  <desc id="desc">An unsmoothed matrix with six zero cells becomes a dense probability matrix after add-one smoothing. The count matrix itself remains sparse.</desc>
+  <style>
+    .title{font:700 25px system-ui,sans-serif;fill:#17364a}.label{font:700 16px ui-monospace,monospace;fill:#52666d}.value{font:800 20px system-ui,sans-serif;fill:#17364a}.zero{fill:#87989b}.new{fill:#d95f43}.note{font:700 18px system-ui,sans-serif;fill:#657079}.arrow-note{font:700 14px system-ui,sans-serif;fill:#657079}.count{font:800 25px system-ui,sans-serif}.arrow{font:900 58px system-ui,sans-serif;fill:#d4a72c}.panel{fill:#fff;stroke-width:5}.cell-seen{fill:#d9efed}.cell-zero{fill:#edf0f0;stroke:#c7d0d1;stroke-width:2;stroke-dasharray:6 5}.cell-new{fill:#f8dcd4;stroke:#e98973;stroke-width:2}
+  </style>
+  <rect width="1200" height="520" rx="28" fill="#f7f5ef"/>
+  <rect class="panel" x="25" y="25" width="500" height="410" rx="22" stroke="#d95f43"/>
+  <rect class="panel" x="675" y="25" width="500" height="410" rx="22" stroke="#0f6f78"/>
+  <text class="title" x="275" y="65" text-anchor="middle">UNSMOOTHED MLE</text>
+  <text class="title" x="925" y="65" text-anchor="middle">ADD-ONE SMOOTHED</text>
+  <g class="label" text-anchor="middle"><text x="205" y="105">language</text><text x="305" y="105">statistics</text><text x="405" y="105">together</text><text x="485" y="105">&lt;/s&gt;</text><text x="855" y="105">language</text><text x="955" y="105">statistics</text><text x="1055" y="105">together</text><text x="1135" y="105">&lt;/s&gt;</text></g>
+  <g class="label" text-anchor="end"><text x="135" y="160">study</text><text x="135" y="250">learn</text><text x="135" y="340">model</text><text x="785" y="160">study</text><text x="785" y="250">learn</text><text x="785" y="340">model</text></g>
+  <g>
+    <rect class="cell-seen" x="155" y="125" width="90" height="60" rx="9"/><rect class="cell-seen" x="255" y="125" width="90" height="60" rx="9"/><rect class="cell-zero" x="355" y="125" width="90" height="60" rx="9"/><rect class="cell-zero" x="455" y="125" width="50" height="60" rx="9"/>
+    <rect class="cell-seen" x="155" y="215" width="90" height="60" rx="9"/><rect class="cell-zero" x="255" y="215" width="90" height="60" rx="9"/><rect class="cell-seen" x="355" y="215" width="90" height="60" rx="9"/><rect class="cell-zero" x="455" y="215" width="50" height="60" rx="9"/>
+    <rect class="cell-zero" x="155" y="305" width="90" height="60" rx="9"/><rect class="cell-seen" x="255" y="305" width="90" height="60" rx="9"/><rect class="cell-zero" x="355" y="305" width="90" height="60" rx="9"/><rect class="cell-seen" x="455" y="305" width="50" height="60" rx="9"/>
+  </g>
+  <g class="value" text-anchor="middle"><text x="200" y="163">.60</text><text x="300" y="163">.40</text><text class="zero" x="400" y="163">0</text><text class="zero" x="480" y="163">0</text><text x="200" y="253">.50</text><text class="zero" x="300" y="253">0</text><text x="400" y="253">.50</text><text class="zero" x="480" y="253">0</text><text class="zero" x="200" y="343">0</text><text x="300" y="343">.33</text><text class="zero" x="400" y="343">0</text><text x="480" y="343">.67</text></g>
+  <g>
+    <rect class="cell-seen" x="805" y="125" width="90" height="60" rx="9"/><rect class="cell-seen" x="905" y="125" width="90" height="60" rx="9"/><rect class="cell-new" x="1005" y="125" width="90" height="60" rx="9"/><rect class="cell-new" x="1105" y="125" width="50" height="60" rx="9"/>
+    <rect class="cell-seen" x="805" y="215" width="90" height="60" rx="9"/><rect class="cell-new" x="905" y="215" width="90" height="60" rx="9"/><rect class="cell-seen" x="1005" y="215" width="90" height="60" rx="9"/><rect class="cell-new" x="1105" y="215" width="50" height="60" rx="9"/>
+    <rect class="cell-new" x="805" y="305" width="90" height="60" rx="9"/><rect class="cell-seen" x="905" y="305" width="90" height="60" rx="9"/><rect class="cell-new" x="1005" y="305" width="90" height="60" rx="9"/><rect class="cell-seen" x="1105" y="305" width="50" height="60" rx="9"/>
+  </g>
+  <g class="value" text-anchor="middle"><text x="850" y="163">.44</text><text x="950" y="163">.33</text><text class="new" x="1050" y="163">.11</text><text class="new" x="1130" y="163">.11</text><text x="850" y="253">.33</text><text class="new" x="950" y="253">.17</text><text x="1050" y="253">.33</text><text class="new" x="1130" y="253">.17</text><text class="new" x="850" y="343">.14</text><text x="950" y="343">.29</text><text class="new" x="1050" y="343">.14</text><text x="1130" y="343">.43</text></g>
+  <text class="arrow" x="600" y="235" text-anchor="middle">→</text><text class="arrow-note" x="600" y="275" text-anchor="middle">redistribute</text><text class="arrow-note" x="600" y="294" text-anchor="middle">mass</text>
+  <text class="count" x="275" y="405" text-anchor="middle" fill="#d95f43">6 / 12 cells are zero</text><text class="count" x="925" y="405" text-anchor="middle" fill="#0f6f78">0 / 12 cells are zero</text>
+  <rect x="120" y="458" width="960" height="42" rx="10" fill="#fff" stroke="#d4a72c" stroke-width="3"/><text class="note" x="600" y="485" text-anchor="middle">The count matrix stays sparse; the smoothed probability matrix becomes dense.</text>
+</svg>

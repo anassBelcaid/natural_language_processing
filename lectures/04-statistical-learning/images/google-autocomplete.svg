@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580" role="img" aria-labelledby="title desc">
+  <title id="title">Google-style search autocomplete</title>
+  <desc id="desc">A search box containing how do language models followed by four predicted query completions.</desc>
+  <rect width="900" height="580" rx="34" fill="#fff"/>
+  <text x="450" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="58">
+    <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+  </text>
+  <rect x="105" y="145" width="690" height="76" rx="38" fill="#fff" stroke="#cfd5da" stroke-width="3"/>
+  <circle cx="148" cy="183" r="13" fill="none" stroke="#65757e" stroke-width="4"/><line x1="158" y1="193" x2="170" y2="205" stroke="#65757e" stroke-width="4"/>
+  <text x="192" y="194" font-family="Arial,sans-serif" font-size="27" fill="#202124">how do language models</text>
+  <g font-family="Arial,sans-serif" font-size="25" fill="#202124">
+    <circle cx="146" cy="267" r="8" fill="none" stroke="#65757e" stroke-width="3"/><line x1="152" y1="273" x2="160" y2="281" stroke="#65757e" stroke-width="3"/><text x="190" y="277">how do language models <tspan font-weight="700">predict words</tspan></text>
+    <circle cx="146" cy="333" r="8" fill="none" stroke="#65757e" stroke-width="3"/><line x1="152" y1="339" x2="160" y2="347" stroke="#65757e" stroke-width="3"/><text x="190" y="343">how do language models <tspan font-weight="700">learn</tspan></text>
+    <circle cx="146" cy="399" r="8" fill="none" stroke="#65757e" stroke-width="3"/><line x1="152" y1="405" x2="160" y2="413" stroke="#65757e" stroke-width="3"/><text x="190" y="409">how do language models <tspan font-weight="700">generate text</tspan></text>
+    <circle cx="146" cy="465" r="8" fill="none" stroke="#65757e" stroke-width="3"/><line x1="152" y1="471" x2="160" y2="479" stroke="#65757e" stroke-width="3"/><text x="190" y="475">how do language models <tspan font-weight="700">work</tspan></text>
+  </g>
+  <text x="450" y="540" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#65757e">Simplified educational reconstruction</text>
+</svg>

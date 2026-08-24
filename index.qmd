@@ -1,9 +1,7 @@
 ---
 format: 
   html:
-    theme: 
-      - cosmo
-      - custom.scss
+    theme: custom.scss
     toc: false
     page-layout: full
     css: styles.css

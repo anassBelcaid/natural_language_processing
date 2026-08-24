@@ -9,9 +9,10 @@ project:
 website:
   title: "CS 351 · NLP"
   navbar:
+    pinned: true
     left:
       - href: index.qmd
-        text: NLP Course
+        text: Home
       - href: logistics.qmd
         text: Logistics
       - href: schedule.qmd
@@ -20,13 +21,26 @@ website:
         text: Coding Projects
       - href: student-projects.qmd
         text: Student Projects
+    right:
+      - icon: github
+        href: https://github.com/anassBelcaid
+        aria-label: Instructor GitHub profile
+  page-footer:
+    left: "Natural Language Processing · Université Abdelmalek Essaâdi"
+    right: "Built with Quarto"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: custom.scss
     css: styles.css
     toc: true
+    toc-location: left
+    smooth-scroll: true
+    code-copy: true
+    anchor-sections: true
+    link-external-newwindow: true
     include-after-body:
       - notes/mermaid-fix.html
+
+execute:
+  freeze: auto

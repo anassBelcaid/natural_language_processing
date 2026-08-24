@@ -75,7 +75,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td>04</td>
   <td><span class="era-label">Representations</span></td>
   <td><strong>Statistical NLP</strong><br><span class="topic-detail">N-grams, language modeling, vectorization, linear classification, evaluation, and error analysis</span></td>
-  <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
+  <td><a class="project-link" href="lectures/04-statistical-learning/index.html">Lecture</a> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
   <td><a class="project-link" href="projects/02-embedding-laboratory/index.html">Project 02 · finish</a></td>
 </tr>

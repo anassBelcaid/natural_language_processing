@@ -1,423 +1,124 @@
 /*-- scss:defaults --*/
 
-// Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap");
 
-// // Color Palette
-$primary: #0891b2;
-$secondary: #0e7490;
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
-$light: #f8f9fa;
-$dark: #343a40;
-//
-// // Typography
-$font-size-base: 1.1rem;
-$line-height-base: 1.6;
-//
-// // Headings
-$h1-font-size: 3rem;
-$h2-font-size: 2.25rem;
-$h3-font-size: 1.75rem;
-$h4-font-size: 1.5rem;
-$h5-font-size: 1.25rem;
-$h6-font-size: 1rem;
-//
+$paper: #f5f1e8;
+$paper-raised: #fffdf7;
+$ink: #17212b;
+$muted: #657079;
+$signal: #ef5b45;
+$electric: #2b7fff;
+$line: rgba(23, 33, 43, 0.14);
+
+$body-bg: $paper;
+$body-color: $ink;
+$primary: $signal;
+$secondary: $electric;
+$link-color: #be3e2f;
+$link-hover-color: #81291f;
+$navbar-bg: rgba(245, 241, 232, 0.93);
+$navbar-fg: $ink;
+$footer-bg: $ink;
+$footer-fg: #edf2f4;
+$font-family-sans-serif: "Manrope", system-ui, sans-serif;
+$font-family-monospace: "DM Mono", monospace;
+$headings-font-family: "Newsreader", Georgia, serif;
 $headings-font-weight: 600;
-$headings-line-height: 1.2;
-$headings-color: $dark;
-//
-// // Spacing
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-);
-//
-// Border radius
-$border-radius: 0.75rem;
-$border-radius-sm: 0.5rem;
-$border-radius-lg: 1rem;
+$border-radius: 0.35rem;
+$code-bg: #eae5da;
+$code-color: #263846;
+$toc-color: $signal;
+$grid-body-width: 1100px;
+$grid-sidebar-width: 150px;
+$grid-margin-width: 120px;
 
-// Shadows
-$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-$box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+/*-- scss:rules --*/
 
-// /*-- scss:rules --*/
-//
-// // Global Styles
-// html {
-//   scroll-behavior: smooth;
-// }
-//
-// body {
-//   font-family: $font-family-sans-serif;
-//   background: $gradient-primary;
-//   min-height: 100vh;
-//   color: $dark;
-// }
-//
-// // Main content container
-// .quarto-container {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 2rem 1rem;
-// }
-// .course-title {
-//   color: $dark !important;  // Force dark color for better visibility
-// }
-//
-// // Hero Section Styles
-// .hero-section {
-//   background: $gradient-light;
-//   border-radius: 20px;
-//   padding: 3rem;
-//   margin: 2rem auto;
-//   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-//   backdrop-filter: blur(10px);
-//   border: 1px solid rgba(255, 255, 255, 0.2);
-// }
-//
-// // Title Styles
-// .title {
-//   background: $gradient-primary;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-//   font-size: 3.5rem;
-//   font-weight: 700;
-//   text-align: center;
-//   margin-bottom: 1rem;
-//   line-height: 1.1;
-// }
-//
-// .subtitle {
-//   text-align: center;
-//   font-size: 1.3rem;
-//   color: #6c757d;
-//   margin-bottom: 2rem;
-//   font-weight: 400;
-// }
-//
-// // Animation Classes
-// .animate-fade-in {
-//   animation: fadeIn 1.5s ease-in-out;
-// }
-//
-// .animate-slide-up {
-//   animation: slideUp 1s ease-out;
-// }
-//
-// .animate-bounce {
-//   animation: bounce 2s infinite;
-// }
-//
-// @keyframes fadeIn {
-//   from { opacity: 0; }
-//   to { opacity: 1; }
-// }
-//
-// @keyframes slideUp {
-//   from { 
-//     transform: translateY(50px); 
-//     opacity: 0; 
-//   }
-//   to { 
-//     transform: translateY(0); 
-//     opacity: 1; 
-//   }
-// }
-//
-// @keyframes bounce {
-//   0%, 20%, 50%, 80%, 100% { 
-//     transform: translateY(0); 
-//   }
-//   40% { 
-//     transform: translateY(-10px); 
-//   }
-//   60% { 
-//     transform: translateY(-5px); 
-//   }
-// }
-//
-// // Icon Styles
-.nlp-icon {
-  font-size: 4rem;
-  text-align: center;
-  margin: 2rem 0;
-  color: $primary;
-}
-//
-// Card Styles
-.feature-card {
-  background: white;
-  border-radius: $border-radius-lg;
-  padding: 2rem;
-  margin: 1rem;
-  box-shadow: $box-shadow;
-  transition: all 0.3s ease;
-  border-left: 5px solid $primary;
+body {
+  letter-spacing: -0.008em;
+  --quarto-sidebar-width: 140px;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: $box-shadow-lg;
+h1, h2, h3 {
+  letter-spacing: -0.025em;
 }
 
-.book-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem 0;
+h1 {
+  font-size: clamp(2.6rem, 6vw, 5.25rem);
+  line-height: 0.95;
 }
 
-.book-card {
-  background: white;
-  border-radius: $border-radius-lg;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: $box-shadow;
-  transition: all 0.3s ease;
-  width: min(100%, 360px);
-  max-width: 360px;
-  
-  &:hover {
-    transform: translateY(-5px);  // Changed from scale to translateY
-    box-shadow: $box-shadow-lg;
-  }
+h2 {
+  margin-top: 2.8rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid $line;
 }
 
-.book-image {
-  width: 190px;
-  height: 250px;
-  object-fit: contain;
-  background: #f6f8fa;
-  border-radius: $border-radius;
-  margin-bottom: 1rem;
-  box-shadow: $box-shadow-sm;
+.navbar {
+  border-bottom: 1px solid $line;
+  backdrop-filter: blur(14px);
 }
 
-//
-// Timeline Styles
-.timeline {
-  position: relative;
-  margin: 2rem 0;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    height: 100%;
-    width: 3px;
-    background: $primary;
-    transform: translateX(-50%);
-  }
+.navbar-brand img {
+  max-height: 30px;
 }
 
-.timeline-item {
-  display: flex;
-  align-items: center;
-  margin: 2rem 0;
-  position: relative;
-
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
+.nav-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.timeline-content {
-  background: white;
-  padding: 1.5rem;
-  border-radius: $border-radius-lg;
-  box-shadow: $box-shadow;
-  width: 45%;
-  position: relative;
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: $box-shadow-lg;
-  }
+.nav-link.active {
+  color: $signal !important;
 }
 
-.timeline-marker {
-  width: 20px;
-  height: 20px;
-  background: $primary;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  box-shadow: 0 0 0 4px white;
-}
-//
-// Grade Table Styles
-.grade-table {
-  background: white;
-  border-radius: $border-radius-lg;
-  overflow: hidden;
-  box-shadow: $box-shadow;
-  margin: 2rem 0;
-
-  th {
-    background: $primary;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  td {
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 1px solid #f0f0f0;
-  }
-
-  tbody tr:hover {
-    background-color: rgba(102, 126, 234, 0.05);
-  }
+#TOC {
+  max-width: 132px;
+  font-size: 0.64rem;
+  line-height: 1.25;
 }
 
-// Contact Section
-.contact-section {
-  background: $primary;
-  color: white;
-  border-radius: $border-radius-lg;
-  padding: 2rem;
-  text-align: center;
-  margin: 2rem 0;
-  box-shadow: $box-shadow;
-}
-//
-// Email Button
-.email-button {
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 50px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+#TOC .toc-title {
+  margin-bottom: 0.7rem;
+  color: $muted;
+  font-family: "DM Mono", monospace;
+  font-size: 0.62rem;
   font-weight: 500;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-}
-//
-// Quarto Callouts Enhancement
-.callout {
-  border-radius: $border-radius;
-  margin: 1.5rem 0;
-
-  &.callout-note {
-    border-left-color: $info;
-  }
-
-  &.callout-tip {
-    border-left-color: $success;
-  }
-
-  &.callout-warning {
-    border-left-color: $warning;
-  }
-
-  &.callout-important {
-    border-left-color: $danger;
-  }
-}
-//
-// Code Blocks
-pre {
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: $border-radius;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-//
-// Responsive Design
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-  }
-
-  .hero-section {
-    padding: 2rem 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    flex-direction: column !important;
-    text-align: left !important;
-  }
-
-  .timeline-content {
-    width: 100%;
-    margin-left: 40px;
-  }
-
-  .timeline-marker {
-    left: 20px;
-  }
-
-  .book-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature-card {
-    margin: 1rem 0;
-  }
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
-// Print Styles
-@media print {
-  body {
-    background: white;
-  }
+#TOC .nav-link {
+  padding-top: 0.13rem;
+  padding-bottom: 0.13rem;
+  color: $muted;
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25;
+  text-transform: none;
+}
 
-  .hero-section,
-  .feature-card,
-  .book-card,
-  .timeline-content,
-  .contact-section {
-    background: white;
-    box-shadow: none;
-    border: 1px solid #ddd;
-  }
+#TOC .nav-link.active {
+  color: $ink !important;
+  border-left-color: $signal;
+  font-weight: 700;
+}
 
-  .animate-fade-in,
-  .animate-slide-up,
-  .animate-bounce {
-    animation: none;
-  }
+code {
+  border-radius: 0.2rem;
+}
+
+pre.sourceCode {
+  border: 1px solid $line;
+  border-left: 3px solid $electric;
+  border-radius: 0.35rem;
+}
+
+.page-footer {
+  border-top: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
 }

@@ -91,8 +91,16 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td>05</td>
   <td><span class="era-label">Neural sequences</span></td>
   <td><strong>Neural Networks for Sequences</strong><br><span class="topic-detail">Neural language models, RNNs, LSTMs, GRUs, and sequence learning</span></td>
-  <td><a class="project-link" href="lectures/05-neural-sequences/index.html">Lecture</a> <span class="resource-pending">Notes</span></td>
-  <td><span class="link-pending">Coming soon</span></td>
+  <td><a class="project-link" href="lectures/05-neural-sequences/index.html">Lecture</a> <a class="project-link" href="notes/05-neural-sequences/index.html">Notes</a> <a class="project-link" href="notes/05-neural-sequences/index.pdf">PDF</a></td>
+  <td>
+    <ul class="course-link-list">
+      <li><span class="required-badge">Paper</span><a href="https://jmlr.org/papers/v3/bengio03a.html">Bengio et al. · Neural probabilistic LM</a></li>
+      <li><span class="required-badge">Paper</span><a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks">Sutskever et al. · Sequence to sequence learning</a></li>
+      <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture04-rnnlm.pdf">CS224N · RNNs and neural machine translation</a></li>
+      <li><span class="required-badge">Read</span><a href="https://web.stanford.edu/~jurafsky/slp3/9.pdf">Jurafsky &amp; Martin · RNNs and LSTMs</a></li>
+      <li><span class="required-badge">Practice</span><a href="https://docs.pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html">PyTorch · Seq2seq translation tutorial</a></li>
+    </ul>
+  </td>
   <td><a class="project-link" href="coding-projects.html">Project 03 · start</a></td>
 </tr>
 <tr class="era-sequences">

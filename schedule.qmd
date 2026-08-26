@@ -91,7 +91,7 @@ The course has **ten teaching weeks** followed by **four weeks of student projec
   <td>05</td>
   <td><span class="era-label">Neural sequences</span></td>
   <td><strong>Neural Networks for Sequences</strong><br><span class="topic-detail">Neural language models, RNNs, LSTMs, GRUs, and sequence learning</span></td>
-  <td><span class="resource-pending">Lecture</span> <span class="resource-pending">Notes</span></td>
+  <td><a class="project-link" href="lectures/05-neural-sequences/index.html">Lecture</a> <span class="resource-pending">Notes</span></td>
   <td><span class="link-pending">Coming soon</span></td>
   <td><a class="project-link" href="coding-projects.html">Project 03 · start</a></td>
 </tr>

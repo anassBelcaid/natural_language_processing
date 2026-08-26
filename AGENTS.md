@@ -15,6 +15,8 @@
 
 - Use the available slide canvas deliberately. Content should normally occupy most of the usable height instead of clustering in the upper three quarters and leaving a large inactive lower area.
 - Improve space usage primarily by increasing the size and visibility of meaningful content: type, equations, matrices, examples, diagrams, and spacing between related elements.
+- Give cards and boxes deliberate dimensions, then keep their text at a readable presentation size and allow it to wrap naturally across as many lines as needed. Never shrink box text or force it onto one line merely to preserve a horizontal layout.
+- When several boxes make the text too small, use fewer columns, taller boxes, or a second row. Treat multi-line text as the normal case and verify that labels, explanations, and values wrap without clipping or overflow.
 - Do not fill space with unnecessary prose, decorative objects, or cumbersome layouts. A slide may retain breathing room, but the composition should feel intentionally balanced across the full canvas.
 - After an instructor review identifies this issue, apply the correction consistently to earlier slides in the same presentation as well as to newly authored slides.
 
